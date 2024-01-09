@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block title%}About{%endblock%}
+{%block content%}
+<H1>About this Hospital</H1>
+{%if number > 0%}
+<h3>{{number}} is a positive number</h3>
+{%elif number < 0%} <h3>{{number}} is a positive number</h3>
+{%else%}
+<h2>the value number is{{number}}</h2>
+{%endif%}
+{%endblock%}

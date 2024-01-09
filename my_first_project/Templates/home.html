@@ -1,0 +1,12 @@
+
+{%extends 'base.html'%}
+
+{%block title%}Home{%endblock%}
+
+{%block content%}
+{%load static%}
+<h3>Hello Am {{name}}</h3>
+<h4> My age is {{age}} </h4>
+<h4>Am From {{place}}</h4>
+<img src="{% static '/Images/7598163.jpg' %}" alt="" width="500px">
+{%endblock%}

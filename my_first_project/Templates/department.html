@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+{%block title%}dept{%endblock%}
+{%block content%}
+    <!-- <H1>Departments</H1>
+    {%for n in list1%}
+    <h6>{{n}}</h6>
+    {%endfor%}
+    -->
+
+
+
+    <h1 class="text-center">Our Departments</h1>
+<hr>
+
+
+<hr>
+{%for d in dept%}
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-3">
+    <h1>{{d.dep_name}}</h1>
+    <p>{{d.dep_description}}</p>
+</div>
+{%endfor%}
+
+{%endblock%}
